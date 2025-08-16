@@ -3,8 +3,6 @@ import requests
 import pandas as pd
 import plotly.express as px
 import numpy as np
-import textwrap
-from openai import OpenAI
 
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
@@ -416,4 +414,5 @@ with abaIA:
     if q:
         st.chat_message("user").write(q)
         resposta = responder_pergunta_simples(q, dados)
+
         st.chat_message("assistant").write(resposta)
