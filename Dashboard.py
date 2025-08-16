@@ -379,7 +379,7 @@ with abaIA:
         st.write("• " + linha)
 
     st.divider()
-    st.subheader("Resumo em linguagem natural (LLM)")
+    st.subheader("Resumo em linguagem natural (LLM) (Desabilitado)")
 
     colA, colB = st.columns(2)
     with colA:
@@ -416,4 +416,5 @@ with abaIA:
         resposta = responder_pergunta_simples(q, dados)
 
         st.chat_message("assistant").write(resposta)
+
 
