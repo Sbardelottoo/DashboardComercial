@@ -171,7 +171,7 @@ def fetch_dados(url, params):
         return None, f"Erro de conexão: {e}"
 
 # ================== APP ==================
-st.title('DASHBOARD DE VENDAS :shopping_trolley:')
+st.title('DASHBOARD DE VENDAS')
 
 # ----- Filtros -----
 url = 'https://labdados.com/produtos'
@@ -416,3 +416,4 @@ with abaIA:
         resposta = responder_pergunta_simples(q, dados)
 
         st.chat_message("assistant").write(resposta)
+
